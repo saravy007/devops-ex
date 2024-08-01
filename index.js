@@ -1,12 +1,12 @@
 // app.js
-const express = require('express');
+const express = require("express");
 const app = express();
 
-app.get('/', (req, res) => {
-  res.status(200).send('Hello, World 3!');
+app.get("/", (req, res) => {
+  res.status(200).send("Hello, World saravy!");
 });
 
-app.get('/user/:id', (req, res) => {
+app.get("/user/:id", (req, res) => {
   res.status(200).json({ id: req.params.id });
 });
 
